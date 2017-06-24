@@ -1,0 +1,11 @@
+bin
+include
+lib
+libexec
+local
+sbin
+share
+src
+ssl
+tmp
+x86_64-pc-cygwin
