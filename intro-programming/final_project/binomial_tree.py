@@ -55,6 +55,8 @@ def tree(steps, flavor):
         if find:
             break
         z2 = z2 + 1
+
+#    print(iv)
     
     pv = np.zeros((steps + 1,steps +1), dtype = np.float64)
     pv[:, steps] = iv[:, steps]
