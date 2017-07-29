@@ -20,7 +20,8 @@ class triangle:
         self.enemies.append(shape_object)
         return self.enemies
     def __str__(self):
-        return("Role: aggressive and prone to violence")
+        to_string = 'base = {}. shape_type = {}. allies = {}, enemies = {}'.format(self.base, self.shape_type, self.allies, self.enemies)
+        return to_string
         
 class square:
     def __init__(self, side = 0):
@@ -67,7 +68,7 @@ class circle:
         self.enemies.append(shape_object)
         return self.enemies
     def __str__(self):
-        return("Role: wise and noble")
+        print("Role: wise and noble")
 
 if __name__ == "__main__":
     t = triangle(4)
@@ -89,4 +90,3 @@ if __name__ == "__main__":
     print(s.shape_type)
     print("friends:",s.allies)
     print("enemies:",s.enemies)
-

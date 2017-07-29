@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-class triangle:
+class Triangle:
     def __init__(self, base = 0):
         self.base = base
-        self.shape_type = "triangle"
+        self.shape_type = "Triangle"
         self.allies = []
         self.enemies = []
     def area(self):
@@ -22,10 +22,10 @@ class triangle:
     def __str__(self):
         return("Role: aggressive and prone to violence")
         
-class square:
+class Square:
     def __init__(self, side = 0):
         self.side = side
-        self.shape_type = "square"
+        self.shape_type = "Square"
         self.allies = []
         self.enemies = []
 
@@ -45,12 +45,12 @@ class square:
         self.enemies.append(shape_object)
         return self.enemies
 
-class circle:
+class Circle:
     pi = 3.14159
     
     def __init__(self, radius = 0):
         self.radius = radius
-        self.shape_type = "circle"
+        self.shape_type = "Circle"
         self.allies = []
         self.enemies = []
     def area(self):
@@ -70,16 +70,19 @@ class circle:
         return("Role: wise and noble")
 
 if __name__ == "__main__":
-    t = triangle(4)
-    print(str(t))
-    c = circle(1)
-    s = square(1)
-    t.add_ally("circle")
-    t.add_enemies("square")
-    c.add_ally("tiangle")
-    c.add_enemies("square")
-    s.add_enemies("triangle")
-    s.add_enemies("square")
+    t = Triangle(2 / (3**0.25))
+    print(t.area())
+    t = Triangle(4)
+    print(t.area())
+    print(type(t))
+    c = Circle(1)
+    s = Square(1)
+    t.add_ally("Circle")
+    t.add_enemies("Square")
+    c.add_ally("Triangle")
+    c.add_enemies("Square")
+    s.add_enemies("Triangle")
+    s.add_enemies("Square")
     print(t.shape_type)
     print("friends:",t.allies)
     print("enemies:",t.enemies)
