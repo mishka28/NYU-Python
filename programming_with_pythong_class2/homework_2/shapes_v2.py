@@ -126,7 +126,8 @@ if __name__ == "__main__":
         else:
             print("Has to be either of 3 with the CamelCase \n {} \n {} \n {} \nPlease try again".format(c.shape_type, s.shape_type, t.shape_type))
     else:
-        print("You failed 3 times you Suck!")        
+        print("You failed 3 times you Suck!")
+        exit(1)        
     
     print("Do you want to know, area and perimeter of the {}? choose Yes or No".format(x.shape_type))
     y_n = raw_input()
