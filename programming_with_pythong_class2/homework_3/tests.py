@@ -5,6 +5,7 @@ from shapes import Triangle
 
 
 
+
 class TestTriangle(unittest.TestCase):
 	def setUp(self):
 		self.test_shapes = Triangle(2 / (3**0.25))
