@@ -19,6 +19,8 @@ pip3 install numpy
 pip3 install xlrd
 pip3 install plotly
 pip3 install pandas-datareader
+pip3 install scipy
+
 
 export RUN_USER="ubuntu"
 export RUNUSER_PROG="/sbin/runuser"
