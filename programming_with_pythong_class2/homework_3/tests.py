@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import unittest
-from shapes import Triangle
+from shapes_v2 import Triangle
 
 
 
