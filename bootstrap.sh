@@ -7,7 +7,7 @@ apt-get install python3 --assume-yes
 apt-get install python3-venv --assume-yes
 apt-get install bpython --assume-yes
 apt-get install python3-tk --assume-yes
-
+apt-get install virtualenv --assume-yes
 
 #pip for getting csv
 apt-get install python3-pip --assume-yes
