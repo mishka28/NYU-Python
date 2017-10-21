@@ -20,6 +20,13 @@ pip3 install xlrd
 pip3 install plotly
 pip3 install pandas-datareader
 pip3 install scipy
+pip3 install Flask-FlatPages
+pip3 install Frozen-Flask
+pip3 install Flask-Markdown
+pip3 install micawber
+pip3 install peewee
+
+
 
 
 export RUN_USER="ubuntu"

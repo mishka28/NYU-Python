@@ -1,0 +1,30 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+  <style type="text/css">
+    .entries{
+        margin: 40px;
+    }
+  </style>
+  <div class="entries">
+    <h1>{% block title %}Posts{% endblock %}</h1>
+    <h2>{% block content_title %}{% if search %}search: "{{ search }}"{% endif %}{% endblock %}</h2>
+    {% for entry in object_list %}
+      {% if search %}
+        {% set entry = entry.entry %}
+      {% endif %}
+      <h3>
+        <a href="{% if entry.published %}{{ url_for('detail', slug=entry.slug) }}{% else %}{{ url_for('edit', slug=entry.slug) }}{% endif %}">
+          {{ entry.title }}
+        </a>
+      </h3>
+      <p>Created {{ entry.timestamp.strftime('%m/%d/%Y at %I:%M %p') }}</p>
+      {% else %}
+        <p>No entries have been created yet.</p>
+    {% endfor %}
+    {% include "includes/pagination.html" %}
+  </div>
+</html>
+{% endblock %}

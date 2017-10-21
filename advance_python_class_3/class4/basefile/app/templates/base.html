@@ -1,0 +1,56 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+<!--         <nav> -->
+        <nav class="navbar navbar-static-top navbar-inverse"  role="navigation">
+          <div class="container">
+            <ul class="nav navbar-nav navbar-left"> <!-- navbar-fixed-top navbar-inverse"> -->
+            <!-- <ul class="nav nav-pills nav-stacked"> -->
+              <li role="presentation">
+                <a href="/">Home</a>
+              </li>
+              <li role="presentation">
+                <a href="/about">About</a>
+              </li>
+              <li role="presentation">
+              <a href="/blub">blub</a>
+              </li>
+              <li role="presentation">
+              <a href="http://flask.pocoo.org" target="_blank">Built with Flask</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            <!-- <ul class="nav nav-pills nav-stacked"> -->
+              <li role="presentation">
+                <a href="/">Home</a>
+              </li>
+              <li role="presentation">
+                <a href="/about">About</a>
+              </li>
+              <li role="presentation">
+              <a href="/blub">blub</a>
+              </li>
+              <li role="presentation">
+              <a href="http://flask.pocoo.org" target="_blank">Built with Flask</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      {% block body %}
+      {% endblock %}
+      <footer class="footer">
+        <p>NYU Advanced Python Class</p>
+      </footer>
+    </div> <!-- /container -->
+  </body>
+</html>

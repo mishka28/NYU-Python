@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+    <style type="text/css">
+      .posts{
+        margin: 20px;
+      }
+      .title{
+		color: #000000;
+      }
+    </style>
+    <div class="posts">
+    	<div class="title">
+			<h1>{{ post.title }}</h1>
+		</div>
+		<body>
+			{{ post.date }}
+			{{ post.html|safe }}
+		</body>
+	</div>
+</html>
+{% endblock %}

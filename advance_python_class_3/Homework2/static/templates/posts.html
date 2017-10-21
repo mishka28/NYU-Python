@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+  <style type="text/css">
+    .bod{
+      margin: 20px;
+    }
+  </style>
+  <div clad="bod">
+    <div class="jumbotron">
+      <p class="lead">
+      	<body>
+			{% for post in posts %}
+    			<a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
+    		{{ post.title }}
+    			</a>
+   				<small>{{ post.date }}</small>
+   			<br>
+			{% endfor %}
+		</body>
+      </p>
+    </div>
+  </div>
+</html>
+{% endblock %}

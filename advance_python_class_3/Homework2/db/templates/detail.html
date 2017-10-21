@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}{{ entry.title }}{% endblock %}
+
+{% block content_title %}{{ entry.title }}{% endblock %}
+
+{% block extra_header %}
+<li><a href="{{ url_for('edit', slug=entry.slug) }}">Edit</a></li>
+{% endblock %}
+
+{% block content %}
+<html>
+    <style type="text/css">
+    .pos{
+        margin: 40px;
+    }
+    .name{
+        margin: 40px;
+        color: #000000;
+    }
+    </style>
+    <div class="name">
+        <h1>{{ entry.title }}</h1>
+        <p>Created {{ entry.timestamp.strftime('%m/%d/%Y at %I:%M %p') }}</p>
+    </div>
+    <div class="pos">
+        {{ entry.html_content }}
+    </div>
+</html>
+{% endblock %}
