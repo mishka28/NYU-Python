@@ -1,6 +1,6 @@
 # About a dataset
 
-## I took monthly CPI data frm 1990 till end of last year from IMF`s website. Data set contains most of the countries, but data is incomplete and pretty crapy
+## I took monthly CPI data from 1990 till the end of last year from IMF`s website. Data set contains most of the countries, but data is incomplete and pretty crapy
 
 [Initial Dataset](./CPI_Data.csv)
 
@@ -10,11 +10,11 @@ Data was pretty bad, lot of dublicates, extra rows and columns, obviously wrong 
 
 [Cleaned Dataset](./CleanedCPIdata.csv)
 
-## Initial graph to visualize change in CPI
+## Initial graph to visualize changes in CPI
 
 ![initial](./CPIgraphBefore.png)
 
-Obviosly e ca tell that some data is pretty bad, so I dropped those cantris that were scewing the graph. I dropped below contries:
+Obviously we can tell that some data is pretty bad, so I dropped those countris that were screwing the graph. I dropped below contries:
 
 ['Brazil','Colombia','Israel','New Zealand', 'Mexico', 'Indonesia', 'Australia', 'Canada']
 
@@ -24,7 +24,7 @@ Obviosly e ca tell that some data is pretty bad, so I dropped those cantris that
 
 ![final](./CPIgraphAfter.png)
 
-it looks much better and the changes in CPI levels looks reasonable and inline. There is many things you can do with that data, gor example run regression and build prediction models. For simplicity I just graphed:
+It looks much better and the changes in CPI levels looks reasonable and inline with expectations. There is many things you can do with that data, for example run regression and build prediction models. For simplicity I just graphed:
 
 ### CPI levels as a bar chart
 
@@ -34,6 +34,6 @@ it looks much better and the changes in CPI levels looks reasonable and inline. 
 
 ![meansbar](./Meansbarchar.png)
 
-### Box plot, showing means and confidence intervals to see, which on those cantries had highest grows in CPI index over past 26 years.
+### Box plot, showing means and confidence intervals to see, which on those cantries had highest grows in CPI index over past 26 years. Portugal did!
 
 ![boxplot](./CPIchangeboxplot.png)
